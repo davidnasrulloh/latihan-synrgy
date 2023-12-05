@@ -1,14 +1,14 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material';
 
-import { BookList, BookCreate } from './pages/books';
+import { BooksList, BookCreate } from './pages';
 import Login from './pages/Login';
-import { theme } from './config/theme';
+// import { theme } from './config/theme';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <BookList />,
+    element: <BooksList />,
   },
 
   {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 ]);
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme=''>
       <RouterProvider router={router} />
     </ThemeProvider>
   );

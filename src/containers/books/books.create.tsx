@@ -1,4 +1,5 @@
-import { Box, TextField, Switch, Stack, styled } from '@mui/material';
+import { Box, TextField, Switch, styled } from '@mui/material';
+// Stack
 import CommonPage from '../../components/common-page/common-page';
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { CloudUpload } from '@mui/icons-material';
@@ -206,7 +207,7 @@ export default function Create() {
                 )}
                 <Box>
                 <Box>
-                    <Stack component="div" display="flex" direction="row" alignItems="center">
+                    <div>
                         <div>Publish</div>
                         <Switch
                         name="published"
@@ -218,7 +219,7 @@ export default function Create() {
                             })
                         }
                         />
-                    </Stack>
+                    </div>
                 </Box>
 
                 </Box>

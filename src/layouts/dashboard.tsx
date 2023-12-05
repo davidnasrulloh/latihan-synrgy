@@ -1,6 +1,7 @@
 import { PropsWithChildren } from 'react';
 import styled from '@emotion/styled';
-import { Avatar, Box, Divider, MenuItem, MenuList, Stack } from '@mui/material';
+// Stack
+import { Avatar, Box, Divider, MenuItem, MenuList } from '@mui/material';
 
 interface IDashboardProps extends PropsWithChildren {}
 
@@ -45,10 +46,10 @@ export default function Dashboard({ children }: IDashboardProps) {
             <MenuList>
               <Divider />
               <MenuItem sx={{ py: 1 }} onClick={handleLogout}>
-                <Stack component='div' direction="row" alignItems="center" spacing={2}>
+                <div>
                   <Avatar>H</Avatar>
                   <Box>Username</Box>
-                </Stack>
+                </div>
               </MenuItem>
             </MenuList>
           </Box>
