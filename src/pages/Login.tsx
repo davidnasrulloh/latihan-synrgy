@@ -50,6 +50,7 @@ export default function Login() {
               message: 'Login success!',
               severity: 'success',
             });
+            window.location.href = 'http://localhost:5175/'
           } catch (error:any) {
             if (error instanceof AxiosError) {
               return setAlert({

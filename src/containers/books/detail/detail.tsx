@@ -18,7 +18,7 @@ const BookDetail = () => {
 
   return (
     <Box>
-      <Link to="/books">
+      <Link to="/">
         <Button startIcon={<ArrowBack />}>Back</Button>
       </Link>
 
